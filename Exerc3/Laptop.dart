@@ -8,16 +8,11 @@ imprimindo todos os detalhes
 
 class Laptop {
   dynamic id;
-  String nome = '';
-  String ram = '';
-  double clockCpu = 12;
+  String nome;
+  String ram;
+  double clockCpu;
 
-  Laptop.build(dynamic id, String nome, String ram, double clockCpu) {
-    this.id = id;
-    this.nome = nome;
-    this.ram = ram;
-    this.clockCpu = clockCpu;
-  }
+  Laptop(this.id, this.nome, this.ram, this.clockCpu);
 
   void imprimirDetalhes() {
     print("\nNome: $nome");

@@ -10,7 +10,11 @@ import 'dart:io';
 import 'Laptop.dart';
 
 void main() {
-  Laptop laptop = Laptop.build(01, "Stardew Valley", "16GB", 1.4);
+  Laptop laptop1 = Laptop(01, "Penny", "8GB", 1.4);
+  Laptop laptop2 = Laptop(01, "Abigail", "32GB", 1.1);
+  Laptop laptop3 = Laptop(01, "Sebastian", "64GB", 1.3);
 
-  laptop.imprimirDetalhes();
+  laptop1.imprimirDetalhes();
+  laptop2.imprimirDetalhes();
+  laptop3.imprimirDetalhes();
 }
