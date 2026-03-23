@@ -15,29 +15,36 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Flutter is Fun!"),
-        backgroundColor: Colors.green,
-      ),
-      backgroundColor: Colors.grey[300],
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
-      body: Center(
-        child: Container(
-          width: 120,
-          height: 120,
-          color: Colors.blue,
-
-          child: Column(
             children: [
-              Text("Oii mae!!!", style: TextStyle(color: Colors.black)),
-              SizedBox(height: 5),
-              Icon(
-                Icons.cyclone,
-                color: Colors.yellow,
-              ), //n achei o pintinho como icone ent deixou esse emoji
+              Column(
+                children: [
+                  Icon(Icons.phone, color: Colors.purple, size: 50),
+                  Text("Call", style: TextStyle(color: Colors.purple)),
+                ],
+              ),
+
+              Column(
+                children: [
+                  Icon(Icons.send, color: Colors.purple, size: 50),
+                  Text("Route", style: TextStyle(color: Colors.purple)),
+                ],
+              ),
+
+              Column(
+                children: [
+                  Icon(Icons.share, color: Colors.purple, size: 50),
+                  Text("Share", style: TextStyle(color: Colors.purple)),
+                ],
+              ),
             ],
           ),
-        ),
+        ],
       ),
     );
   }
