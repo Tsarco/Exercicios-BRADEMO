@@ -38,7 +38,7 @@ class LoginForm extends StatelessWidget {
 
         SizedBox(height: 30),
 
-        FloatingActionButton(
+        FloatingActionButton.extended(
           onPressed: () {
             if (_login.auth()) {
               Navigator.push(
@@ -52,7 +52,15 @@ class LoginForm extends StatelessWidget {
             }
           },
 
-          child: Text("Fazer Login"),
+          backgroundColor: Colors.blue,
+          label: Container(
+            width: 200,
+            child: Text(
+              "Fazer Login",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
         ),
       ],
     );

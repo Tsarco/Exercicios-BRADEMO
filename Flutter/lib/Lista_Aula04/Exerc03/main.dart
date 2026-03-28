@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
 
 void main() {
-  runApp(const LoginApp());
+  runApp(const MyApp());
 }
 
-class LoginApp extends StatelessWidget {
-  const LoginApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,14 +14,16 @@ class LoginApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Exercício 3 - Login',
       theme: ThemeData(
-        primaryColor: Colors.blue,
-        floatingActionButtonTheme: FloatingActionButtonThemeData(
-          backgroundColor: Colors.blue,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+        useMaterial3: true,
+        primarySwatch: Colors.blue,
+
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          extendedTextStyle: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+            inherit: true,
           ),
         ),
-        // Você pode adicionar o inputDecorationTheme aqui se quiser padronizar os campos
       ),
       home: LoginScreen(),
     );
