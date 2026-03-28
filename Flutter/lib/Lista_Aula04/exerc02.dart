@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
       data: Theme.of(context).copyWith(scaffoldBackgroundColor: Colors.yellow),
 
       child: Scaffold(
-        appBar: AppBar(title: Text("Exerc01 com Theme Data")),
+        appBar: AppBar(title: Text("Exerc02 com Theme Data")),
 
         body: Center(child: Text("Texto")),
       ),
