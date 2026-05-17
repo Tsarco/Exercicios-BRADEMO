@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  geolocator: ^14.0.2
+  google_maps_flutter: ^2.17.0
   hive_ce: ^2.19.3
   hive_ce_flutter: ^2.3.4
   http: ^1.6.0
